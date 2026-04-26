@@ -41,17 +41,16 @@ exports.handler = async function (event) {
         Prefer: "wait=60",
       },
       body: JSON.stringify({
-        version: "stability-ai/sdxl", // simple usage
-        input: {
-          prompt: prompt,
-          negative_prompt: negative_prompt,
-          width: 1024,
-          height: 1024,
-          num_inference_steps: 30,
-          guidance_scale: 7.5,
-        },
-      }),
-    });
+  version: "da77bc59ee60423279fd632efb4795ab731d9e3ca9705ef3341091fb989b7eaf",
+  input: {
+    prompt: prompt,
+    negative_prompt: negative_prompt,
+    width: 1024,
+    height: 1024,
+    num_inference_steps: 30,
+    guidance_scale: 7.5,
+  },
+}),
 
     const prediction = await startRes.json();
 
